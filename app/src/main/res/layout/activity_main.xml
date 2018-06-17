@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yurbul.myapp.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light">
+
+            <ImageButton
+                android:id="@+id/image_signs"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/image_signs"
+                android:layout_marginStart="14dp"
+                android:text="Знаки"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/image_signs"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/image_signs"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_toStartOf="@+id/image_terms"
+                android:text="Закладки"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/image_terms"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageButton2"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/imageButton4"
+                android:text="Термины"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/image_terms"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/image_terms"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imageButton4"
+                android:layout_marginStart="14dp"
+                android:text="Инфо"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/imageButton4"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageButton4"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Продолжить чтение"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_continue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:text="Содержание"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+    </RelativeLayout>
+
+    <com.yurbul.myapp.MyLayout
+        android:id="@+id/MyLayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

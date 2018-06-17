@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageSettings"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageSettings"
+        android:text="TextView" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageSettings"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:id="@+id/imageAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageSettings"
+        app:srcCompat="@drawable/ic_search" />
+
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageAbout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/viewDivider"
+        android:layout_toEndOf="@+id/imageSettings"
+        android:text="TextView" />
+
+    <View
+        android:id="@+id/viewDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageAbout"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAbout"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLang"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
