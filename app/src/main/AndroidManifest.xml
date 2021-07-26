@@ -22,12 +22,6 @@
         </activity>
         <activity android:name=".SignsNewScreenActivity">
 
-        </activity>
-        <activity android:name=".TermsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
-
     </application>
 
 </manifest>
